@@ -1,0 +1,11 @@
+{% extends 'movies/base.html' %}
+
+{% block content %}
+
+<h1>{{ details.title }}</h1>
+<p>Описание: {{ details.overview }}</p>
+<p>Бюджет: {{ details.budget}} $</p>
+<p>Длительность: {{ details.runtime }} мин.</p>
+<p><a href="{% url 'index' %}">К списку фильмов</a></p>
+
+{% endblock %}
